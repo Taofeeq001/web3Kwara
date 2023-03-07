@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav img{
+    height: 70px;
+}
+.nav-bar{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+nav{
+    display: flex;
+    /* justify-content: space-between; */
+    height: 20vh;
+    align-items: center;
+    width: 100%; 
+    align-items: center;
+}
+nav button{
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px; 
+    background-color: #EB780D;
+}
+.nav-item{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.toggle{
+    display: none;
+    padding: 5px 15px;
+}
+/*======== end of nav ===============*/
+.hero-1{
+    display: flex;
+    flex-direction: column;
+    background: url(./Rectangle\ 1.png);
+    height: 100vh;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero-1 h1{
+    font-size:xx-large;
+    font-weight: 1000px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+
+}
+.hero-1 p{
+    color: grey;
+    margin-bottom: 40px;
+}
+.content a{
+    text-decoration: none;
+    background-color: #EB780D;
+    padding: 10px 15px;
+    color: white;
+}
+.hero-2{
+    background-color: rgb(237, 220, 207);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+   
+}
+.about h1{
+    margin-bottom: 10px;
+    font: bolder;
+    font-size: xx-large;
+}
+.hero-2 img{
+    height: 50vh;
+}
+.mobile-nav{
+    
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        transition: .9s ease-in-out;
+        font-size: 20px;
+}
+
+.mobile-nav a{
+    text-decoration: none;
+    color: white;
+}
+/*========End of Hero-2=======*/
+
+.hero-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-3 h1{
+    margin-bottom: 30px;
+}
+.events{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.ev-1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+
+}   
+.ev-2{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+
+    
+}
+.ev-3{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+
+}
+.ev-1 img{
+    height: 30vh;
+    margin-bottom: 15px;
+}
+.ev-2 img{
+    height: 30vh;
+    margin-bottom: 15px;
+}
+.ev-3 img{
+    height: 30vh;
+    margin-bottom: 15px;
+}
+
+.hero-4{
+    background-color: rgb(237, 220, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-4 h1{
+    margin-bottom: 30px;
+}
+.top{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 10px;
+}
+.bottom{
+    display: flex;
+    gap: 100px;
+}
+.bottom img{
+    height: 25vh;
+    margin-bottom: 7px;
+}
+.top img{
+    height: 25vh;
+    margin-bottom: 7px;
+}
+.org{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat img{
+    height: 20px;
+}
+.hero-5{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color: lightgrey;
+}
+.hero-5 img{
+    height: 40vh;
+}
+.last h1{
+    margin-bottom: 20px;
+}
+.last p{
+    margin-bottom: 15px
+}
+.last a{
+    text-decoration: none;
+    color: white;
+    background-color: #EB780D;
+    padding: 10px 15px;   
+}
+footer{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 900px) {
+    .toggle{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 85%;
+        top: 10%;
+    }
+   .nav-item{
+    display: none;
+   }
+   .hero-2{
+    flex-direction: column-reverse;
+   }
+   .events{
+    flex-direction: column;
+   }
+   .ev-1 img{
+    width: 100%;
+   }
+   .top{
+    flex-direction: column;
+   }
+   .bottom{
+    flex-direction: column;
+   }
+   .hero-5{
+    flex-direction: column;
+   }
+   footer{
+    flex-direction: column;
+   }
+   .mobile-nav li a{
+    color: white;
+    font-size: 20px;
+   }
+}
